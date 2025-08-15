@@ -51,10 +51,10 @@ git submodule update --init --recursive
 ### 2) Create a virtual environment & install deps
 
 python -m venv .venv
-# macOS/Linux
+### macOS/Linux
 source .venv/bin/activate
-# Windows (PowerShell)
-# .\.venv\Scripts\Activate.ps1
+### Windows (PowerShell)
+## .\.venv\Scripts\Activate.ps1
 
 pip install -r requirements.txt
 
