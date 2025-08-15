@@ -43,7 +43,7 @@ PhonePe_Pulse_Data_Visualization/
 ### 1) Clone the repo
 
 If you’re using **submodules** for the dataset:
-```bash
+
 git clone https://github.com/viswanathv4320/PhonePe_Pulse_Data_Visualization.git
 cd PhonePe_Pulse_Data_Visualization
 git submodule update --init --recursive
@@ -57,6 +57,8 @@ source .venv/bin/activate
 # .\.venv\Scripts\Activate.ps1
 
 pip install -r requirements.txt
+
+---
 
 ## Tech Stack
 
