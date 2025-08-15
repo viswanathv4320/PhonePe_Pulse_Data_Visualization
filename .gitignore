@@ -1,20 +1,20 @@
-# OS cruft
+cat >> .gitignore << 'EOF'
+# OS
 .DS_Store
 
-# Python
 __pycache__/
 *.py[cod]
-*.egg-info/
-.venv/
-venv/
 
-# Secrets / local config
 .env
 my.cnf
 
-# Large/binary docs not needed for runtime
 *.pdf
 *.zip
+EOF
 
-# Optional: ignore raw dataset; use a fetch script instead
-pulse/
+git rm --cached .DS_Store my.cnf mygeodata.zip 2>/dev/null || true
+git rm -r --cached __pycache__/ 2>/dev/null || true
+
+git add .gitignore
+git commit -m "Cleanup: ignore system files, caches, secrets, and large binaries"
+git push
