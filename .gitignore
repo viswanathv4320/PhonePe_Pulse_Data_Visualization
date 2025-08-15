@@ -1,0 +1,20 @@
+# OS cruft
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Secrets / local config
+.env
+my.cnf
+
+# Large/binary docs not needed for runtime
+*.pdf
+*.zip
+
+# Optional: ignore raw dataset; use a fetch script instead
+pulse/
